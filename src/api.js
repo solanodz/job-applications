@@ -1,6 +1,6 @@
 const api = {
     jobs: {
-        list: async info => {
+        list: async () => {
             return await fetch(`https://docs.google.com/spreadsheets/d/e/2PACX-1vQEawQE4WjBupoMl0G2MIl58AdHDluQ8y_l3qIeDOUUVATkaH4RzP2iYuAcXr4KMtP4UdxrHO5cqzxL/pub?output=csv`,
                 { next: { tags: ["jobs"] } }
             )
@@ -21,7 +21,6 @@ const api = {
                             };
                         });
                 })
-
         }
     }
 }
