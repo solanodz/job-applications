@@ -10,11 +10,12 @@ const api = {
                         .split("\n")
                         .slice(1)
                         .map(row => {
-                            const [fecha, empresa, tituloPuesto, postuleEn, respondieron, entrevista] = row.split(",");
+                            const [fecha, empresa, tituloPuesto, categoria, postuleEn, respondieron, entrevista] = row.split(",");
                             return {
                                 fecha,
                                 empresa,
                                 tituloPuesto,
+                                categoria,
                                 postuleEn,
                                 respondieron,
                                 entrevista
